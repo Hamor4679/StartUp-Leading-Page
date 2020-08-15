@@ -172,5 +172,26 @@
 	top: 0;
 	transition: top 0.2s linear, ease-in 0.2s;
 }
+.mobile-nav{
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	right: -15px;
+	height: 100vh;
+	width: 360px;
+	padding: 80px 10px 10px 10px;
+	background-color:#63190e
+}
+.mobile-nav__item{
+	list-style-type: none;
+	padding-bottom: 60px;
+	text-align: center;
+}
+.mobile-nav__link{
+	text-decoration: none;
+	color: #fff;
+	font-size: 40px;
+	font-family: 'montserrat', sans-serif;
+}
 
 
