@@ -1,0 +1,76 @@
+.services-top{
+	text-align: center;
+}
+.indent{
+	margin: 100px 0px 72px 0px;
+}
+.services-top__title{
+	font-family: 'montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #555555;
+	display: inline-block;
+	margin-bottom: 60px;
+	font-size: 20px;
+	text-transform: uppercase;
+	position: relative;
+}
+.services-top__title::before{
+	content:'';
+	width: 50px;
+	height: 2px;
+	background-color: #555555;
+	position: absolute;
+	bottom: -30px;
+	left: 25px;
+}
+.services-top__content{
+	font-family: 'robotoslab';
+	font-weight: 400;
+	font-size: 16px;
+	color: #555555;
+}
+.services-card{
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width:768px){
+	.services-card{
+		display: block;
+	
+	}
+	.services-card__item{
+		padding-bottom: 30px;
+		margin: 0 auto;
+		width: 545px/1180px*100%;
+	}
+}
+@media(max-width: 360px){
+	.services-card__item{
+		width: 845px/1180px*100%;
+	}
+}
+.indent-card{
+	margin-bottom: 70px;
+}
+.services-card__item{
+	text-align: center;
+	width: 345px/1180px*100%;
+}
+.services-card__icon{
+	padding-bottom: 30px;
+}
+.services-card__title{
+	font-family: 'montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #555555;
+	text-transform: uppercase;
+	padding-bottom: 26px;
+}
+.services-card__content{
+	font-family: 'robotoslab';
+	font-size: 14px;
+	color: #555555;
+	line-height: 1.44;	
+}
