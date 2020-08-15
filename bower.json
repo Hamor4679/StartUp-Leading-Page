@@ -1,0 +1,27 @@
+{
+  "name": "gulp_project",
+  "description": "my second build of gulp",
+  "main": "index.js",
+  "authors": [
+    "stopinov roman"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Hamor4679/gulp-assembly.git",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "fancybox": "^3.5.7",
+    "jquery.form-styler": "jquery-form-styler#^2.0.2",
+    "slick-carousel": "^1.8.1",
+    "fontawesome": "^5.13.0"
+  }
+}
