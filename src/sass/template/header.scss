@@ -51,10 +51,10 @@
 }
 @media(max-width:360px){
 	.header-logo__icon{
-		font-size: 35px;
+		font-size: 40px;
 	}
 	.header-logo__text{
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 .menu__list{
@@ -187,7 +187,9 @@
 	.mobile-nav{
 		display: block;
 		right: -375px;
-
+	}
+	.header{
+		overflow: hidden;
 	}
 	.mobile-nav--active{
 		transform: translateX(-100%);
@@ -196,14 +198,20 @@
 	.mobile-nav__item{
 		padding-bottom: 80px; ;
 	}
+	.content__items{
+		margin-top: 320px;
+	}
 }
 @media(max-width:360px){
 	.mobile-nav{
-		padding: 75px 10px 10px 10px;
-		height: 121vh;
+		padding: 45px 10px 10px 10px;
+		height: 105.1vh;
 	}
 	.mobile-nav__item{
 		padding-bottom: 40px; ;
+	}
+	.content__items{
+		margin-top: 160px;
 	}
 }
 .mobile-nav__item{
