@@ -35,7 +35,7 @@
 		background-color: #c0301c;
 	}
 	.slick-arrow.slick-prev:before{
-		content: "\f105";
+		content: "\e901";
 		font-family: 'icomoon';
 		font-size: 20px;
 		color: #000;
@@ -52,7 +52,7 @@
 		background-color: #c0301c;
 	}
 	.slick-arrow.slick-next:before{
-		content: "\f105";
+		content: "\e900";
 		font-family: 'icomoon';
 		font-size: 20px;
 		color: #000;
@@ -84,17 +84,3 @@
 .slick-track{
 	display: flex;
 }
-.test{
-	margin: 0 auto;
-	width: 100px;
-	height: 100px;
-	background-color: #c0301c;
-	font-family: "icomoon";
-	font-size: 20px;
-}
-.test:before{
-	content: "\f104";
-	
-	
-}
-

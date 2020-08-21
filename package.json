@@ -35,7 +35,7 @@
       "img": "src/img/**/*.{jpg,png,svg,gif,ico,webp}",
       "fonts": "src/fonts/**/*.ttf",
       "icon": "src/icon/**/*.{eot,svg,ttf,woff}",
-      "libs": "src/libs/"
+      "libs": "src/libs/**/*.css"
     },
     "clean": "./dist/"
   },
