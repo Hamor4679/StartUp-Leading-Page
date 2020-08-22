@@ -9,3 +9,8 @@
 	font-style: #{$style};
 		};
 	};
+	@mixin text($font, $size, $weight) {
+		font-family: $font;
+		font-size: $size;
+		font-weight: $weight;
+	}

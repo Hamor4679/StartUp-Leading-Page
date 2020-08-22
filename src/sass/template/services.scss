@@ -2,7 +2,7 @@
 	text-align: center;
 }
 .indentation{
-	margin: 100px 0px 72px 0px;
+	padding: 100px 0px 72px 0px;
 }
 // -------------------------------------
 //------------top of block---------------
@@ -36,6 +36,9 @@
 .services-card{
 	display: flex;
 	justify-content: space-between;
+}
+.card__indentation{
+	padding-bottom: 100px;
 }
 @media(max-width:786px){
 	.services-card{

@@ -1,23 +1,59 @@
 .aboutSlider {
+	padding: 100px 0 100px 0;
+	background-color:#dfdbdb ;
 }
 .aboutUs {
-
+	text-align: center;
 		&__title {
-		}
-
+			@include text('montserrat', 20px, 400);
+			color:$colorText;
+			padding-bottom: 30px;
+			display: inline-block;
+			position: relative;
+			text-transform: uppercase;
+				&::before{
+					position: absolute;
+					left: 30px;
+					top: 52px;
+					content: '';
+					width: 50px;
+					height: 2px;
+					background-color: $colorText;
+				}
+			}
 		&__subTitle {
+			@include text('robotoslab', 16px, 400);
+			color:$colorText;
+			padding: 30px 0px 70px 0px;
 		}
-}
+	}
 .aboutUs-column {
-
-		&__content {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 70px;
+		@media(max-width:360px) {
+			display: block;	
 		}
-}
+		&__content {
+			@include text('robotoslab', 14px, 400);
+			width: 555px/1180px*100%;
+			color: $colorText;
+				@media(max-width:360px){
+					width: 100%;
+						&:nth-child(1){
+							padding-bottom: 20px;
+						}
+						&:nth-child(2){
+							text-align: right;
+						}
+				}
+		}
+	}
 .slider {
 	position: relative;
+	outline: none;
 	.slick-arrow{
 		position: absolute;
-		
 		top: 35%;
 		z-index: 10;
 		font-size: 0;
@@ -30,16 +66,16 @@
 		background-color: transparent;
 		border: 1px solid #000;
 		outline: none;
-	}
-	.slick-arrow.slick-prev:hover{
-		background-color: #c0301c;
-	}
-	.slick-arrow.slick-prev:before{
-		content: "\e901";
-		font-family: 'icomoon';
-		font-size: 20px;
-		color: #000;
-	}
+			&:hover{
+				background-color: $colorArrow;
+			}
+			&:before{
+				content: "\e901";
+				font-family: 'icomoon';
+				font-size: 25px;
+				color: #000;
+			}
+		}
 	.slick-next.slick-arrow{
 		right: 5px;
 		width: 30px;
@@ -47,35 +83,81 @@
 		background-color: transparent;
 		border: 1px solid #000;
 		outline: none;
+			&:hover{
+				background-color: $colorArrow;
+			}
+			&:before{
+				content: "\e900";
+				font-family: 'icomoon';
+				font-size: 25px;
+				color: #000;
+			}
+		}
+	.slick-arrow.slick-disabled{
+		background-color: $colorArrow;
 	}
-	.slick-next.slick-arrow:hover{
-		background-color: #c0301c;
+	.slick-dots{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 35px;
 	}
-	.slick-arrow.slick-next:before{
-		content: "\e900";
-		font-family: 'icomoon';
-		font-size: 20px;
-		color: #000;
+	.slick-dots li{
+		list-style: none;
+		margin-left: 25px;
+	}
+	.slick-dots li:nth-child(1){
+		margin: 0;
+	}
+	.slick-dots button{
+		font-size: 0;
+		width: 10px;
+		height: 10px;
+		background-color: transparent;
+		border-radius: 50%;
+		border:1px solid #000;
+		outline: none;
+		cursor: pointer;
+	}
+	.slick-dots li.slick-active button{
+		background-color: $colorDots;
 	}
 		&__item {
-			position: relative;
 			text-align: center;
+			outline: none;
 		}
-
 		&__img {
+		position: relative;
+		display: inline-block;
+			&:hover{
+				opacity: 1;
+			}
 		}
-
 		&__icon {
-			font-size: 10px;
 			position: absolute;
-			bottom: 50px;
-			left: 40px;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 275px;
+			font-size: 10px;
+			background: rgba(0,0,0,.5);
+			color: #fff;
+			padding-top: 225px;
+			text-align: center;
+			opacity: 0;
+			transition: 0.5s;
+				&:hover{
+					opacity: 1;
+			}
 		}
-
 		&__title {
+			@include text('montserrat', 14px, 400);
+			color: #555555;
+			padding: 15px 0px 15px 0px;
 		}
-
 		&__subTitle {
+			@include text('robotoslab', 13px, 400);
+			color: #555555;
 		}
 }
 .slick-list{
@@ -83,4 +165,15 @@
 }
 .slick-track{
 	display: flex;
+}
+.fa-square{
+	color: $colorIcon;
+	opacity: 0;
+	
+}
+.fa-stack:hover .fa-square{
+	opacity: 1;
+}
+a:focus{
+	outline-color: transparent;
 }
