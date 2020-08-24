@@ -1,0 +1,96 @@
+.recentblog-posts {
+	padding: 100px 0px 100px 0px;
+}
+.recent-blog {
+	text-align: center;
+	&__title {
+		@include text('montserrat', 20px, 400); 
+		color:$colorText;
+		@extend %titleUnderline;
+	&:before{
+		left:85px;
+		background-color: $colorText ;
+	}
+}
+	&__subTitle {
+		@include text('RobotoSlab', 16px, 400); 
+		color:$colorText;
+		padding: 30px 0px 30px 0px;
+	}
+}
+.recent-posts {
+	margin: 40px 0px 40px 0px;
+	&:nth-child(4){
+		margin-bottom: 0;
+	}
+	display: flex;
+}
+.recent-img {
+	margin-right:40px;
+}
+.recent-date{
+	border: 2px solid $colorText;
+	width: 72px;
+	height: 72px;
+	text-align: center;
+	position: relative;
+	margin-right: 27px ;
+	&__number{
+		@include text('montserrat', 24px, 700);
+		color: $colorText;
+		position: absolute;
+		left: 22px;
+		top: 9px;
+	}
+	&__month{
+		@include text('montserrat', 14px, 700);
+		color: $colorText;
+		text-transform: uppercase;
+		position: absolute;
+		left: 19px;
+		top: 39px;
+	}
+}
+.recent-header{
+	display: flex;
+	align-items: center;
+}
+.recent-text{
+	&__title {
+		@include text('Montserrt', 16px, 400);
+		text-transform: uppercase;
+		color: $colorText;
+		&:hover{
+			color:$colorHoverText;
+		}
+	}
+	&__subtitle {
+		@include text('RobotoSlab', 13px, 400,);
+		font-style: italic;
+		color: $colorText;
+		padding-top: 20px;
+		&:hover span{
+			color:$colorHoverText;
+		}
+		
+	}
+}
+.recent-content {
+	&__text {
+		@include text2('RobotoSlab', 14px, 400, 1.6em);
+		color: $colorText;
+		padding: 25px 0px 35px 0px;
+	}
+	&__link {
+		
+	}
+	&__btn {
+		@include text('RobotoSlab', 13px, 700);
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		&:hover{
+			color:$colorHoverText;
+		}
+	}
+}

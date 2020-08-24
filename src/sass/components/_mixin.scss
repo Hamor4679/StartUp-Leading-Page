@@ -13,4 +13,10 @@
 		font-family: $font;
 		font-size: $size;
 		font-weight: $weight;
+	};
+	@mixin text2($font, $size, $weight, $line) {
+		font-family: $font;
+		font-size: $size;
+		font-weight: $weight;
+		line-height: $line;
 	}

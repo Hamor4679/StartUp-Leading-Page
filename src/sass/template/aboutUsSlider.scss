@@ -7,17 +7,9 @@
 		&__title {
 			@include text('montserrat', 20px, 400);
 			color:$colorText;
-			padding-bottom: 30px;
-			display: inline-block;
-			position: relative;
-			text-transform: uppercase;
+			@extend %titleUnderline;
 				&::before{
-					position: absolute;
 					left: 30px;
-					top: 52px;
-					content: '';
-					width: 50px;
-					height: 2px;
 					background-color: $colorText;
 				}
 			}
@@ -134,21 +126,12 @@
 			}
 		}
 		&__icon {
-			position: absolute;
-			top:0;
-			left:0;
-			width: 100%;
-			height: 275px;
+			@extend %blackout;
 			font-size: 10px;
-			background: rgba(0,0,0,.5);
-			color: #fff;
 			padding-top: 225px;
-			text-align: center;
-			opacity: 0;
-			transition: 0.5s;
-				&:hover{
-					opacity: 1;
-			}
+			height: 275px;
+			background: $blackoutSlider;
+			color: #fff;
 		}
 		&__title {
 			@include text('montserrat', 14px, 400);

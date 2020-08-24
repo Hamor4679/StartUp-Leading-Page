@@ -1,0 +1,33 @@
+%blackout{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			opacity: 0;
+			transition: 0.5s;
+				&:hover{
+					opacity: 1;
+			}
+};
+%titleUnderline{
+	padding-bottom: 30px;
+			display: inline-block;
+			position: relative;
+			text-transform: uppercase;
+				&::before{
+					position: absolute;
+					top: 52px;
+					content: '';
+					width: 50px;
+					height: 2px;
+}
+};
+%overlay{
+	position: absolute;
+	background-color: rgba(192, 48, 28, 0.4);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+};
+
