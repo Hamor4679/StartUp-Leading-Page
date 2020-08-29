@@ -1,35 +1,41 @@
 .recentblog-posts {
 	padding: 100px 0px 100px 0px;
 }
-.recent-blog {
+.blogposts-header {
 	text-align: center;
 	&__title {
 		@include text('montserrat', 20px, 400); 
-		color:$colorText;
+		color:$mainColorText;
 		@extend %titleUnderline;
-	&:before{
-		left:85px;
-		background-color: $colorText ;
+			&:before{
+				left:85px;
+				background-color: $mainColorText ;
+			}
 	}
-}
-	&__subTitle {
+	&__subtitle {
 		@include text('RobotoSlab', 16px, 400); 
-		color:$colorText;
+		color:$mainColorText;
 		padding: 30px 0px 30px 0px;
 	}
 }
-.recent-posts {
+.blogposts-main{
 	margin: 40px 0px 40px 0px;
-	&:nth-child(4){
-		margin-bottom: 0;
-	}
+		&:nth-child(4){
+			margin-bottom: 0;
+		}
 	display: flex;
+	@media(max-width: 940px){
+		display: block;
+	}
 }
-.recent-img {
+.blogposts-img {
 	margin-right:40px;
+	@media(max-width: 940px){
+		max-width: 100%;	
+	}
 }
-.recent-date{
-	border: 2px solid $colorText;
+.blogposts-date{
+	border: 2px solid $mainColorText;
 	width: 72px;
 	height: 72px;
 	text-align: center;
@@ -37,29 +43,34 @@
 	margin-right: 27px ;
 	&__number{
 		@include text('montserrat', 24px, 700);
-		color: $colorText;
+		color: $mainColorText;
 		position: absolute;
 		left: 22px;
 		top: 9px;
 	}
 	&__month{
 		@include text('montserrat', 14px, 700);
-		color: $colorText;
+		color: $mainColorText;
 		text-transform: uppercase;
 		position: absolute;
 		left: 19px;
 		top: 39px;
 	}
 }
-.recent-header{
+.blogposts-heading{
 	display: flex;
 	align-items: center;
+	@media(max-width: 940px){
+		margin-top: 30px;
+		justify-content: space-between;
+		
+	}
 }
-.recent-text{
+.blogposts-text{
 	&__title {
 		@include text('Montserrt', 16px, 400);
 		text-transform: uppercase;
-		color: $colorText;
+		color: $mainColorText;
 		&:hover{
 			color:$colorHoverText;
 		}
@@ -67,22 +78,18 @@
 	&__subtitle {
 		@include text('RobotoSlab', 13px, 400,);
 		font-style: italic;
-		color: $colorText;
+		color: $mainColorText;
 		padding-top: 20px;
 		&:hover span{
 			color:$colorHoverText;
 		}
-		
 	}
 }
-.recent-content {
+.blogposts-content {
 	&__text {
 		@include text2('RobotoSlab', 14px, 400, 1.6em);
-		color: $colorText;
+		color: $mainColorText;
 		padding: 25px 0px 35px 0px;
-	}
-	&__link {
-		
 	}
 	&__btn {
 		@include text('RobotoSlab', 13px, 700);

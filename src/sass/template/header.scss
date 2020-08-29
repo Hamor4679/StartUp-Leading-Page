@@ -8,10 +8,11 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	max-width: 100%;
 	min-height: 770px;
 	position: relative;
 }
-@media(max-width:786px){
+@media(max-width:768px){
 	.header{
 		height: 100%;
 		overflow: hidden;
@@ -69,7 +70,7 @@
 }
 // -------------------------------
 // ------menu desktop------------------
-@media(max-width:786px){
+@media(max-width:768px){
 	.menu{
 		display: none;
 	}
@@ -209,7 +210,7 @@
 .content__condentation{
 	margin-top: 220px;
 }
-@media(max-width:786px){
+@media(max-width:768px){
 	.content__condentation{
 		margin-top: 230px;
 	}

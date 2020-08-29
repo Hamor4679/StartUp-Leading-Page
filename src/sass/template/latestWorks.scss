@@ -3,45 +3,39 @@
 }
 .Portfolio-header {
 	text-align: center;
-	
 		&__title {
 			@include text('montserrat', 20px, 400);
-			color:$colorText;
+			color:$mainColorText;
 			@extend %titleUnderline;
 				&::before{
 					left: 52px;
-					background-color: $colorText;
+					background-color: $mainColorText;
 				}
 		}
 }
 .Portfolio-menu {
 	margin-top: 30px;
-	
 		&__list {
 			display: flex;
 			justify-content: center;
 		}
-
 		&__item {
 			margin-left: 30px;
 			list-style-type: none;
-			:hover{
-				color:$colorMenu;
-			}
+				:hover{
+					color:$colorHoverTextMenuFilter;
+				}
 			&:nth-child(1){
 				margin: 0;
 			}
 		}
-
 		&__link {
 			@include text('RobotoSlab', 16px, 400);
-			color: $colorText;
+			color: $mainColorText;
 			text-decoration: none;
-			
 		}
 }
 .Portfolio-pictures {
-
 		&__line {
 			display: flex;
 			justify-content: space-between;
@@ -50,9 +44,11 @@
 					margin-top: 70px;
 			}
 		}
-
 		&__img {
-			position: relative;	
+			position: relative;
+		}
+		&__img img {
+			max-width: 100%;
 		}
 		&__blackout{
 			height: 320px;
@@ -74,25 +70,24 @@
 		&__btn{
 			background-color: $colorWhite;
 			border: none;
-			height: 30px;
+			height: 40px;
 			width: 100px;
-		}
-		&__btn a{
 			@include text('RobotoSlab', 14px, 400);
-			text-decoration: none;
 			color: $colorTextBtnBlackout;
 			padding-right: 18px;
 			text-transform: uppercase;
 			position: relative;
+			cursor: pointer;
 				&:after{
 					content:'\e900';
 					font-family: 'icomoon';
 					font-size: 23px;
 					position: absolute;
-					top: -3px;
-					left: 42px;
+					top: 8px;
+					left: 65px;
 				}
 			}
 		}
+		
 
 

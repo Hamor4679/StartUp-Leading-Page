@@ -6,16 +6,16 @@
 	text-align: center;
 		&__title {
 			@include text('montserrat', 20px, 400);
-			color:$colorText;
+			color:$mainColorText;
 			@extend %titleUnderline;
 				&::before{
 					left: 30px;
-					background-color: $colorText;
+					background-color: $mainColorText;
 				}
 			}
 		&__subTitle {
 			@include text('robotoslab', 16px, 400);
-			color:$colorText;
+			color:$mainColorText;
 			padding: 30px 0px 70px 0px;
 		}
 	}
@@ -29,7 +29,7 @@
 		&__content {
 			@include text('robotoslab', 14px, 400);
 			width: 555px/1180px*100%;
-			color: $colorText;
+			color: $mainColorText;
 				@media(max-width:360px){
 					width: 100%;
 						&:nth-child(1){
@@ -148,6 +148,9 @@
 }
 .slick-track{
 	display: flex;
+}
+.slick-slide{
+	outline: none;
 }
 .fa-square{
 	color: $colorIcon;

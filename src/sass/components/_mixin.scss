@@ -10,13 +10,34 @@
 		};
 	};
 	@mixin text($font, $size, $weight) {
-		font-family: $font;
-		font-size: $size;
-		font-weight: $weight;
+		font: {
+		family: $font;
+		size: $size;
+		weight: $weight;
+		}
 	};
 	@mixin text2($font, $size, $weight, $line) {
-		font-family: $font;
-		font-size: $size;
-		font-weight: $weight;
+		font: {
+		family: $font;
+		size: $size;
+		weight: $weight;
+		}
 		line-height: $line;
+	}
+	@mixin text3($font, $size, $weight, $line, $style) {
+		font: {
+		family: $font;
+		size: $size;
+		weight: $weight;
+		}
+		font-style: $style;
+		line-height: $line;
+	}
+	@mixin icon ($icon, $ff, $fs, $color){
+		content: $icon;
+		font: {
+				family: $ff;
+				size: $fs;
+			}
+				color: $color;
 	}
