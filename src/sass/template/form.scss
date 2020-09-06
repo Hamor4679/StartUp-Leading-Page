@@ -1,0 +1,192 @@
+.form {
+	padding: 100px 0px 100px 0px;
+}
+.form-header {
+	text-align: center;
+	&__title {
+		@include text('montserrat', 20px, 400); 
+		color:$mainColorText;
+		@extend %titleUnderline;
+			&:before{
+				left: 33%;
+				background-color: $mainColorText ;
+			}
+	}
+	&__subtitle {
+		@include text('RobotoSlab', 16px, 400); 
+		color:$mainColorText;
+		padding: 30px 0px 30px 0px;
+	}
+}
+.form-content {
+	margin-top: 40px;
+	display: flex;
+	@media (max-width:1024px) {
+		display: block;
+	}
+	@media (max-width:768px) {
+		display: block;
+	}
+}
+.form-info p{
+	@include text('robotoslab', 12px, 400);
+	color:$mainColorText;
+	line-height: 1.5em;
+	
+}
+.form-info {
+	margin-right: 165px;
+	@media (max-width:1024px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0px 0px 45px 0px;
+	}
+	@media (max-width:768px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin: 0px 0px 45px 0px;
+	}
+		&__city {
+			padding-left: 35px;
+			position: relative;
+			width: 240px;
+		}
+		&__address {
+			@include text('montserrat', 14px, 400);
+			text-transform: uppercase;
+			color:$mainColorText;
+			margin-bottom: 20px;
+				&:before{
+					content: "\e947";
+					font-family: 'icomoon';
+					font-size: 18px;
+					position: absolute;
+					left:0;
+					top: -2px;
+				}
+		}
+		&__line {
+			margin-top: 40px;
+			padding-left: 35px;
+			position: relative;
+			@media (max-width:1024px){
+				margin: 0;
+			}
+			@media (max-width:768px){
+				margin: 0;
+			}
+		}
+		&__hotline {
+			@include text('montserrat', 14px, 400);
+			text-transform: uppercase;
+			color:$mainColorText;
+			margin-bottom: 20px;
+				&:before{
+					content: "\e958";
+					font-family: 'icomoon';
+					font-size: 18px;
+					color: #000;
+					position: absolute;
+					left:0;
+					top: 0px;
+				}
+		}
+		&__posts {
+			margin-top: 40px;
+			padding-left: 35px;
+			position: relative;
+			@media (max-width:1024px){
+				margin: 0;
+				
+			}
+			@media (max-width:768px){
+				margin: 0;
+			}
+		}
+		&__email {
+			@include text('montserrat', 14px, 400);
+			text-transform: uppercase;
+			color:$mainColorText;
+			margin-bottom: 20px;
+				&:before{
+					content: "\e902";
+					font-family: "icomoon";
+					font-size: 18px;
+					position: absolute;
+					left:0;
+					top: -2px;
+				}
+		}
+}
+
+.form-main {
+	&__input input{
+		@include text('robotoslab', 12px, 400);
+		text-transform: uppercase;
+		padding-left: 10px;
+		margin-bottom: 20px;
+		border: 1px solid $mainColorText;
+		width: 348px/733px*100%;
+		height: 42px;
+			&:nth-child(odd){
+				margin-right: 30px;
+			}
+			&:focus{
+				border:1px solid $color;
+				box-shadow: 2px 5px 5px 0 rgba(0,0,0,0.24); 
+			}
+			
+		}
+	
+		&__area {
+			padding: 10px 0px 0px 10px;
+			@include text('robotoslab', 12px, 400);
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			border: 1px solid $mainColorText;
+			width: 733px/733px*100%;
+			height: 105px;
+			resize: vertical;
+			&:focus{
+				border:1px solid $color;
+				box-shadow: 2px 5px 5px 0 rgba(0,0,0,0.24);
+			}
+		}
+		&__btn{
+			display: flex;
+			align-items: center;
+		}
+		&__btn button {
+			@include text('robotoslab', 12px, 400);
+			text-transform: uppercase;
+			color:$mainColorText;
+			background-color: transparent;
+			border: 1px solid $mainColorText;
+			margin-right: 40px;
+			width: 168px;
+			height: 42px;
+			cursor: pointer;
+			&:focus{
+				background-color: $color;
+				color:$colorWhite;
+				box-shadow:2px 5px 5px 0 rgba(0,0,0,0.24);
+			}
+		}
+		&__btn button:hover{
+			background-color: $color;
+			color:$colorWhite	
+		}
+		&__footnote{
+			@include text('robotoslab', 12px, 400);
+			color:$mainColorText;
+		}
+		&__footnote span{
+			color:$color;
+	}
+}
+*:focus{
+	outline: none;
+}
+

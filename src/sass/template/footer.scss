@@ -1,21 +1,42 @@
 .footer {
-
+	padding:100px 0px 100px 0px;
+	background-color: $colorFonFooter;
+	text-align: center;
 	&__icon {
+		font-size: 10px;
+		@extend %titleUnderline;
+			&::before{
+				top:70px;
+				left: 93px;
+				background-color: $colorWhite;
+			}
+	}
+	&__link{
+		margin-left: 18px;
+		&:nth-child(1){
+			margin:0;
+		}
+	}
+	&__text{
+		@include text('robotoslab', 12px, 400);
+			color: $colorWhite;
+			text-transform: uppercase;
+			margin-top: 30px;	
+	}
+	.fa-stack{
+		width: 44px;
+		height: 44px;
+		color:$colorIcon;
+		border: 2px solid $colorWhite;
+		border-radius: 50%;
+		transition: 0.5s;
+		&:hover{
+			transform: scale(1.4);
+		}
+		
 	}
 }
-.fa-stack {
-}
-.fa-2x {
-}
-.fas {
-}
-.fa-circle {
-}
-.fa-stack-2x {
-}
-.fa-flag {
-}
-.fa-stack-1x {
-}
-.fa-inverse {
-}
+	
+	
+
+

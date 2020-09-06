@@ -1,0 +1,33 @@
+.clients{
+	padding: 100px 0px 100px 0px;
+	background-color:$bg;
+}
+.slider-logo{
+	margin: 0 auto;
+	text-align: center;
+	
+	&__img  {
+		margin-bottom: 68px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}	
+	&__img {
+		img + img{
+		margin-left: 60px;
+	}
+}
+	&__content{
+	@include text3('robotoslab', 18px, 400, 1.6em, italic);
+	color: $mainColorText;
+	margin: 0 auto;
+	width: 800px/1180px*100%;
+}
+	&__content p + p{
+	@include text3('robotoslab', 20px, 400, 1.6em, normal);
+	color: $mainColorText;
+	margin-top: 40px;
+}
+	@extend %dotsSlider;
+}

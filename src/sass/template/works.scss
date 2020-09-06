@@ -35,20 +35,38 @@
 			text-decoration: none;
 		}
 }
+.img{
+	@media (max-width:1024px) {
+		display: none;
+	}
+}
 .Portfolio-pictures {
 		&__line {
 			display: flex;
-			justify-content: space-between;
+			flex-wrap: wrap;
 			margin-top: 30px;
 				&:nth-child(1){
-					margin-top: 70px;
+					margin-top: 50px;
 			}
-		}
+				@media (max-width: 1024px){
+					display: flex;
+					justify-content: space-around;
+					
+					
+				}
+			}
+		
 		&__img {
 			position: relative;
-		}
-		&__img img {
-			max-width: 100%;
+			width: 370px/1180px*100%;
+			margin: 20px 10px 0px 10px;
+			
+			@media (max-width: 786px){
+				width:540px/1180px*100%; 
+			}
+			@media (max-width:360px) {
+				width:100%; 
+			}
 		}
 		&__blackout{
 			height: 320px;

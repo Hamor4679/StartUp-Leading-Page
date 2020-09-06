@@ -8,7 +8,7 @@
 		color:$mainColorText;
 		@extend %titleUnderline;
 			&:before{
-				left:85px;
+				left: 40%;
 				background-color: $mainColorText ;
 			}
 	}
